@@ -1,39 +1,39 @@
 // ЕЛЕМЕНТИ DOM
 // Додавання на сторінку: 
-form.appendChild(div); document.body.insertBefore(div, form);
+	form.appendChild(div); document.body.insertBefore(div, form);
 // Видалення: 
-document.body.removeChild(form);
-
+	document.body.removeChild(form);
+	
 
 // ПОДІЇ
 // Додавання:
- el.addEventListener('click', function() {});
+ 	el.addEventListener('click', function() {});
 // Видалення:
- el.removeEventListener('click',  function() {});
+ 	el.removeEventListener('click',  function() {});
 
 
 // ТАЙМЕРИ
 // Додавання:
-var timerId = setTimeout(function(){...}, 300);
-var intervalId = setInterval(function(){...}, 1000);
+	var timerId = setTimeout(function(){...}, 300);
+	var intervalId = setInterval(function(){...}, 1000);
 // Видалення:
-clearTimeout(timerId);
-clearInterval(intervalId);
+	clearTimeout(timerId);
+	clearInterval(intervalId);
 
 
 //Url І ІСТОРІЯ
-location.href
-location.hash
-location.origin
-location.search
-location.assign()
-location.reload()
+	location.href
+	location.hash
+	location.origin
+	location.search
+	location.assign()
+	location.reload()
 
-history.pushState()
-history.replaceState()
-history.back()
-history.forward()
-history.go()
+	history.pushState()
+	history.replaceState()
+	history.back()
+	history.forward()
+	history.go()
 
 
 // LOCALSTORAGE
@@ -65,10 +65,10 @@ history.go()
 
 // XMLHttpRequest
 // Приклад
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'to/url.html', false);
-xhr.send();
-console.log(xhr.status);
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'to/url.html', false);
+	xhr.send();
+	console.log(xhr.status);
 
 // readyState
 // 0 - open не вызывался
@@ -78,18 +78,18 @@ console.log(xhr.status);
 // 4 - данные получены
 
 // МАСИВИ. МЕТОДИ
-- forEach. Перебирає елементи як for
+// forEach. Перебирає елементи як for
 
-          var arr = ['a', 'b', 'c'];
-          arr.forEach(function(element) {
-              console.log(element);
-          });
+	var arr = ['a', 'b', 'c'];
+	arr.forEach(function(element) {
+	    console.log(element);
+	});
 
 // PROTOTYPE
 // prototype об'єкт який містить у собі методи та властивості які будуть доступні для всіх нащадків
 // __proto__ посилання на prototype
-rabbit.__proto__ = animal; //енімал - прототип ребіта. Ребіт наслідує всі властивовсі енімала
-rabbit .hasOwnProperty(prop) //перевіряє чи є властивість проп в ребіт
+	rabbit.__proto__ = animal; //енімал - прототип ребіта. Ребіт наслідує всі властивовсі енімала
+	rabbit .hasOwnProperty(prop) //перевіряє чи є властивість проп в ребіт
 
 // "use strict"
 // Переводить інтерпретатор в строгий режим. Є ряд обмежень. Основне не можна оголошувати змінні без var.
