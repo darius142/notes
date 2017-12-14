@@ -79,11 +79,18 @@
 
 // МАСИВИ. МЕТОДИ
 // forEach. Перебирає елементи як for
-
 	var arr = ['a', 'b', 'c'];
 	arr.forEach(function(element) {
 	    console.log(element);
 	});
+
+// map() створює новий масив з результатами виклику вказаної фції
+	var numbers = [1, 5, 10, 15];
+	var roots = numbers.map(function(x) {
+   		return x * 2;
+	});
+// roots зараз [2, 10, 20, 30]
+// numbers залишається [1, 5, 10, 15]
 
 // PROTOTYPE
 // prototype об'єкт який містить у собі методи та властивості які будуть доступні для всіх нащадків
