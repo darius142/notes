@@ -15,3 +15,7 @@ class Greeting extends React.Component {		// створюється нови к�
 
 import React from 'react';	// створює обєкт React, в якому є властисості, такі як React.createElement()
 import ReactDOM from 'react-dom'; 	// є властивості для роботи з DOM, такі як ReactDOM.render()
+
+
+// Import
+import { NavBar} from './NavBar' //  в файлі в який імпортують. З якого додати export перед компронентом 
