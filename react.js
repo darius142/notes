@@ -18,4 +18,9 @@ import ReactDOM from 'react-dom'; 	// є властивості для робо�
 
 
 // Import
-import { NavBar} from './NavBar' //  в файлі в який імпортують. З якого додати export перед компронентом 
+import { NavBar} from './NavBar' //  в файлі в який імпортують. З якого додати export перед компронентом
+
+// Props
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+} 
