@@ -23,10 +23,25 @@ import { NavBar} from './NavBar' //  в файлі в який імпортую�
 // Props
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
-} 
+}
 
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
   }
 }
+
+<Greeting firstName="Esmerelda" /> // Записати props
+
+render() {									// Доступ до props
+  return <h1>{this.props.firstName}</h1>;
+}
+
+this.props.children 	// доступ до дітей
+getDefaultProps 		// пропс по замовчуванні
+
+// State(стан)
+this.state = { mood: 'decent' };	// записати state(стан) властивість
+{this.state.mood} // прочитати властивість
+
+super(props) //
