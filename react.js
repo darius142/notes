@@ -69,3 +69,7 @@ var Counter = React.createClass({
 });
 
 React.render(<Counter/>, document.getElementById('myDiv'));
+
+
+// Comments
+{ /* коментар */ }
